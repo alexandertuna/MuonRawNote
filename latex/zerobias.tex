@@ -1,0 +1,44 @@
+\section{Details of the ZeroBias dataset}
+\label{sec:zerobias}
+
+Data events are collected via the \texttt{ZeroBias} stream. This stream replaces the \texttt{MinBias} stream in 2015 data-taking as the recommended source of unbiased proton collisions. Another usage of the stream is to provide data events used in MC overlay of additional pileup interactions. 
+
+The stream triggers on ``zero bias'' events by acknowledging a L1 \texttt{EM15} trigger and recording the event one LHC orbit after this. This ensures the recorded event is from a filled bunch crossing but makes no further requirements of the event.
+
+The stream is pre-scaled to 10 Hz throughout 2015. 5 Hz of triggers are allocated for inclusive zero bias events, \texttt{HLT\_noalg\_zb\_L1ZB}, and 5 Hz of triggers are allocated for zero bias events where additionally a jet is required at HLT with $\pt > 40$ GeV, \texttt{HLT\_j40\_L1ZB}. Both triggers are seeded by \texttt{L1\_ZB}. More details on the stream are available at the \href{https://twiki.cern.ch/twiki/bin/viewauth/Atlas/Run2StreamingSetup}{Run2StreamingSetup twiki}.
+
+Data events are required to be in lumi blocks where all detector and reconstruction elements are reported to be functioning properly, which are collected in a good runs list (GRL). Exceptionally, Run 281143 is included in the GRL, when the insertable $b$-layer (IBL) was turned off. The absence of the IBL does not affect the \texttt{ZeroBias} triggers or the operation of the MDT and CSC. The GRL used here is:
+
+\texttt{data15\_13TeV.periodAllYear\_DetStatus-v73-pro19-08\_DQDefects-00-01-02} \\
+\texttt{\_PHYS\_StandardGRL\_All\_Good\_25ns\_tolerable\_IBLSTANDBY-DISABLE.xml}
+
+Because the study is not statistically limited, not all events are used in the study. A random sample of 10-50\% of each run is used in the studies. The runs are described in more detail in Table~\ref{tab:zerobias}.
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{c|c|c|c}
+      Run    & Int. lumi. [\ipb] & Bunches & Events used \\
+      \hline
+      278880 &             22.7  &     447 & 51304 \\
+      279169 &             57.8  &     733 & 70949 \\
+      279345 &             54.9  &     877 & 53972 \\
+      279685 &             78.2  &    1021 & 57115 \\
+      280231 &             93.2  &    1165 & 51597 \\
+      280464 &             61.5  &    1309 & 36492 \\
+      280673 &            156.8  &    1453 & 33852 \\
+      280862 &            137.8  &    1453 & 59833 \\
+      281074 &             48.0  &    1596 & 36431 \\
+      281143 &            210.2  &    1596 & 77801 \\
+      281411 &            141.7  &    1813 & 46019 \\
+      282992 &            112.1  &    1813 & 63457 \\
+      283429 &            243.0  &    2029 & 73039 \\
+      283780 &            151.3  &    2232 & 73218 \\
+      284213 &            207.7  &    2232 & 77754 \\
+      284285 &            255.8  &    2232 & 74323 \\
+    \end{tabular}
+    \caption{Data-taking conditions for runs used in the MDT/CSC hit rate studies. The integrated luminosity is taken from \href{https://atlas-lumicalc.cern.ch/results/b8e9b9/result.html}{lumicalc (b8e9b9)}.}
+    \label{tab:zerobias}
+  \end{center}
+\end{table}
+
+

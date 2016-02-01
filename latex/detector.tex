@@ -1,0 +1,27 @@
+\section{The ATLAS detector}
+\label{sec:detector}
+
+The ATLAS detector is a multi-purpose detector at the Large Hadron Collider (LHC). It is a nearly hermetic detector built to measure the trajectory and momenta of particles stemming from proton-proton collisions. 
+
+The Inner Detector (ID) measures the trajectory of charged particles immersed in a multi-tesla solenoidal magnetic field, thus providing precise momentum measurements. It is composed of three detector technologies: silicon pixels, silicon strips (SCT), and a transition radiation tracker (TRT). It is surrounded by non-compensating electromagnetic and hadronic calorimeters, whose active material are liquid argon and scintillator, respectively.
+
+Outside the ID and calorimeters, the muon spectrometer (MS) exists to measure the trajectory of muons immersed in a multi-tesla toroidal magnetic field. The MS consists of three concentric shells (inner, middle, outer) split into barrel and endcap regions. Four detector technologies are used: monitored drift tubes (MDTs) and cathode strip chambers (CSCs) provide precise momentum measurements, and resistive plate chambers (RPCs) and thin gap chambers (TGCs) provide fast measurements for triggering at the 40 MHz LHC collision rate. The MDTs and the CSCs are the focus of this note.
+
+The MDTs consist of 400,000 tubes and cover the full range of the MS. 
+
+The CSCs are deployed only in the inner endcap closest to the beam pipe, which is the most radiation intensive region of the MS. 
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{ c | c }
+      Detector & ADC counts noise cut-off \\
+      \hline
+      MDT      & tube ADC > 50 \\
+      CSC      & cluster max strip ($q_\text{max}$) > 100 \\
+    \end{tabular}
+    \caption{Criteria for a MDT tube hit or CSC cluster passing noise thresholds.}
+    \label{tab:detector-adc}
+  \end{center}
+\end{table}
+
+
