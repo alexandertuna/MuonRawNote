@@ -29,7 +29,7 @@ DVIPDF   = dvipdf
 
 #-------------------------------------------------------------------------------
 # The main document filename
-BASENAME = mydocument
+BASENAME = muonrawhits
 #-------------------------------------------------------------------------------
 # Adjust this according to your top-level figures directory
 # This directory tree is used by the "make cleanepstopdf" command
