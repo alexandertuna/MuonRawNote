@@ -23,6 +23,8 @@
 \usepackage{\ATLASLATEXPATH atlascontribute}
 \usepackage{\ATLASLATEXPATH atlasphysics}
 
+\usepackage{tabulary}
+
 \addbibresource{muonrawhits.bib}
 \addbibresource{bibtex/bib/ATLAS.bib}
 
@@ -62,17 +64,9 @@
 
 \include{latex/zerobias}
 \include{latex/emittance_scans}
+\include{latex/noisy_tubes}
+\include{latex/electronic_noise}
 
 \printbibliography
-
-\clearpage
-
-\PrintAtlasContribute{0.30}
-
-\clearpage
-
-\appendix
-\part*{Auxiliary material}
-\addcontentsline{toc}{part}{Auxiliary material}
 
 \end{document}
