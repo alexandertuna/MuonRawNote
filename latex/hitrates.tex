@@ -1,7 +1,7 @@
 \section{Hit rates}
 \label{sec:hitrates}
 
-Hit rates are defined as the number of hits recorded in a given detector element divided by the livetime and active area of that detector element. The livetime of the MDTs (CSCs) is taken to be 1300 (140) ns, or 52 (5.6) bunch crossings, and the active area of each detector is derived by summing up the active area of each detector element. In the case of the MDTs, these are cylindrical tubes with a diameter of typically 3 centimeters and a length of about 1 meter. For the CSCs, these are strips with a pitch of 5 millimeters and a length of about 1 meter.
+Hit rates are defined as the number of hits recorded in a given detector element divided by the livetime and active area of that detector element. The livetime is the amount of time for which the detector element is active and recording data around the proton collision of interest. The livetime of the MDTs (CSCs) is taken to be 1300 (140) ns, or 52 (5.6) bunch crossings, and the active area of each detector is derived by summing up the active area of each detector element. In the case of the MDTs, these are cylindrical tubes with a diameter of typically 3 centimeters and a length of about 1 meter. For the CSCs, these are strips with a pitch of 5 millimeters and a length of about 1 meter.
 
 The majority of hits in the MDTs and CSCs are due to cavern background, not muons. Cavern background is a mixture of prompt particles from a recent proton collisions and the long-lived neutron gas accumulated from many collisions before and after the collision of interest. TODO: more description of cavern background.
 
@@ -60,15 +60,17 @@ In the endcap chambers, the hit rate depends significantly on the transverse dis
   \end{center}
 \end{figure}
 
+\newcommand*{\hspsix}{\hspace*{0.6cm}}
+
 \begin{table}
   \begin{center}
     \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{c|c|c|c}
-      \multicolumn{1}{c|}{}              & \multicolumn{2}{c|}{\rate}                               & \multicolumn{1}{c}{} \\
-      \hspace{0.6cm}region\hspace{0.6cm} & \hspace{0.6cm}average\hspace{0.6cm} & peak: smallest $r$ & peak / average \\
+    \begin{tabular}{c|c|c|c|c}
+      \multicolumn{2}{c|}{}                                             & \multicolumn{2}{c|}{\rate}                   & \multicolumn{1}{c}{} \\
+      \hspsix region \hspsix & expo. fit                                & \hspsix average \hspsix & peak: smallest $r$ & peak / average \\
       \hline\hline
-      CSC L                              & 344                                 & 668                & 1.94 \\
-      CSC S                              & 360                                 & 803                & 2.23 \\
+      CSC L                  & $e^{\ 7.65\ -\ 1.20\cdot r \text{ [m]}}$ & 344                     & 668                & 1.94 \\
+      CSC S                  & $e^{\ 8.22\ -\ 1.61\cdot r \text{ [m]}}$ & 360                     & 803                & 2.23 \\
     \end{tabular}
     \caption{Comparison of the CSC chamber average hit rate with the hit rate closest to the beampipe in Run 284285. The average luminosity in Run 284285 is $\mathcal{L}=4.1\times10^{33}$.}
     \label{tab:hitrates-vs-r-raw}
