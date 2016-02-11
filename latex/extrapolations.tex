@@ -31,32 +31,24 @@ This fit gives parameters for the linear dependence of hit rate on instantaneous
 
 The projected average hit rates at Run 3 and HL-LHC conditions are shown in Table~\ref{tab:extrapolations-hitrates-raw}. The instantaneous luminosity is assumed to be $2\times10^{34}$ in Run 3 and $7\times10^{34}$ at the HL-LHC. 
 
+\newcommand*{\hspfou}{\hspace*{0.4cm}}
+
 \begin{table}
   \begin{center}
     \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{c|c|c}
-      \multicolumn{1}{c}{} & \multicolumn{2}{c}{\rate} \\
-      \hspace{0.6cm}Region\hspace{0.6cm} & \hspace{0.6cm}Run 3\hspace{0.6cm} & HL-LHC   \\
+    \begin{tabular}{c||c|c||c|c}
+      \multicolumn{1}{c}{}   & \multicolumn{4}{c}{\rate} \\
+      \multicolumn{1}{c}{}   & \multicolumn{2}{c}{inclusive}                  & \multicolumn{2}{c}{with ADC cut} \\
+      \hspsix Region \hspsix & \hspsix Run 3 \hspsix & \hspfou HL-LHC \hspfou & \hspsix Run 3 \hspsix & \hspfou HL-LHC \hspfou \\
       \hline\hline
-      CSC L        & 798.7     & 5065.2 \\
-      CSC S        & 804.7     & 5095.2 \\
+      CSC L        & 798.7     & 5065.2 & 546.4 & 3337.8 \\
+      CSC S        & 804.7     & 5095.2 & 547.0 & 3342.1 \\
       \hline
-      MDT EIL1     & 188.7     & 1189.4 \\
-      MDT EIS1     & 177.9     & 1137.0 \\
+      MDT EIL1     & 188.7     & 1189.4 & 160.4 & 1007.1 \\
+      MDT EIS1     & 177.9     & 1137.0 & 151.8 &  967.6 \\
       \hline
-      MDT EML1     &  45.8     &  287.3 \\
-      MDT EMS1     &  59.8     &  371.5 \\
-
-      % adc
-      % CSC L        & 697.0     & 4399.66 \\
-      % CSC S        & 708.6     & 4479.66 \\
-      % \hline
-      % MDT EIL1     & 160.4     & 1007.13 \\
-      % MDT EIS1     & 151.8     &  967.57 \\
-      % \hline
-      % MDT EML1     &  38.6     &  241.16 \\
-      % MDT EMS1     &  50.1     &  308.94 \\
-
+      MDT EML1     &  45.8     &  287.3 &  38.6 &  241.2 \\
+      MDT EMS1     &  59.8     &  371.5 &  50.1 &  308.9 \\
     \end{tabular}
     \caption{Projected average hit rates at Run 3 and HL-LHC conditions in the hottest regions of the MS. Run 3 conditions assume $\mathcal{L}=2\times10^{34}$ and 2808 filled bunches in the LHC. HL-LHC conditions assume $\mathcal{L}=7\times10^{34}$ and 3564 filled bunches.}
     \label{tab:extrapolations-hitrates-raw}
